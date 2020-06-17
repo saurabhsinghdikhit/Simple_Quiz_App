@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MathsGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/textboxbackground"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/totque"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opr1"
+                android:padding="10dp"
+                android:textStyle="bold"
+
+                android:textSize="30sp"
+                android:text="1"
+                ></TextView>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                android:id="@+id/operator"
+                ></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+
+                android:textSize="30sp"
+                android:id="@+id/opr2"
+                android:text="2"
+                ></TextView>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/equals"
+                android:text="="></Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtans"
+                android:padding="10dp"
+                android:visibility="invisible"
+
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:text="3"
+                ></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnnextm"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@drawable/textboxbackground"
+            android:text="Next"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/finishgame"
+
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/textboxbackground"
+        android:text="Finish the game"
+        />
+</LinearLayout>
